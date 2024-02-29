@@ -1,0 +1,138 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_bar {
+    top: 0px;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: lavenderblush;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    align-items: center;
+}
+
+.main_btn {
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+}
+
+.btn1 {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000; 
+    
+}
+.btn2 {
+    position: fixed;
+   
+    bottom: 10px;
+    left: 10px;
+    z-index: 1000;  
+
+}
+
+button {
+    margin: 1rem;
+    padding: 0.2rem;
+    border: 2px solid black;
+    background-color: lavenderblush;
+    border-radius: 10px;
+    text-align: center;
+    font-style: italic;
+    font-size: small;
+    font-weight: 550;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 45vw 45vw;
+    column-gap: 5vw;
+    justify-content: space-around;
+    row-gap: 5vh;
+    margin-bottom: 20px;
+}
+
+
+
+.card{
+    display: flex;
+    border: 2px;
+    border-radius: 5px;
+    color: la ;
+    padding: 1rem;
+    margin: auto;
+    flex-flow: column nowrap;
+    justify-content: center;
+    row-gap: 0.5rem;
+    z-index: 2;
+    background-image: linear-gradient(#e6e6fa,#f0f8ff);
+    width: 40vw;
+    position: relative;
+    cursor: pointer;
+    box-shadow: -2px 2px 5px 3px lavender
+}
+
+.card:hover{
+    box-shadow: -5px 5px 12px 7px lavender
+
+}
+
+
+.card_header {
+ display: flex;
+ flex-flow: column wrap;
+ justify-content: center;
+ align-items: center;
+ color: rgb(74, 74, 74);
+ font-weight: 600;
+ font-style: italic;
+ text-transform: uppercase;
+}
+
+.card_header .card_image{
+    border: 2px solid lavender;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+}
+
+.card_info {
+  font-size: small;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-transform: capitalize;
+}
+
+.card_info span {
+    font-weight: 600;
+}
+
+.card button{
+    color: red;
+    padding: 1px 1.5px;
+    border: 1px transparent ;
+    border-radius: 100%;
+    background-color: transparent;
+    position: absolute;
+    top:10px;
+    right:10px;
+}
+
+
+form {
+    display: grid;
+    grid-gap: 0.75rem;
+    grid-template-columns: 1fr 4fr;
+  }
+form input{
+    border: 1px solid black;
+}
+
+form .gender{
+    display: flex;
+    justify-content: space-between;
+  }
